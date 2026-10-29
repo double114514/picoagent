@@ -1,6 +1,13 @@
 # picoagent
 
+[![CI](https://github.com/double114514/picoagent/actions/workflows/ci.yml/badge.svg)](https://github.com/double114514/picoagent/actions/workflows/ci.yml)
+[![Docs](https://github.com/double114514/picoagent/actions/workflows/docs.yml/badge.svg)](https://double114514.github.io/picoagent/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
+
 一个**工程级的极简 Python Agent 框架**：手写 ReAct 循环、工具调用、记忆管理、规划策略、结构化输出与事件钩子。**零重型依赖**——仅用 Python 标准库实现 LLM 通信（`urllib`），适合学习 Agent 原理，也可直接作为 AI 应用开发的项目底座。
+
+📖 在线文档：<https://double114514.github.io/picoagent/>
 
 ## 特性
 
