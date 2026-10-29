@@ -1,0 +1,22 @@
+site_name: picoagent
+site_description: A minimal, engineering-grade ReAct agent framework in Python
+repo_url: https://github.com/double114514/picoagent
+repo_name: double114514/picoagent
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: blue grey
+
+nav:
+  - 首页: index.md
+  - 快速开始: quickstart.md
+  - 核心概念: concepts.md
+  - API 参考: api.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
