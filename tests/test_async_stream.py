@@ -1,8 +1,15 @@
 """Tests for async arun, streaming fallback, and async tools."""
 import asyncio
 
-from picoagent import (Agent, AgentConfig, LLMResponse, MockLLM, ToolCall,
-                       ToolRegistry, run_async)
+from picoagent import (
+    Agent,
+    AgentConfig,
+    LLMResponse,
+    MockLLM,
+    ToolCall,
+    ToolRegistry,
+    run_async,
+)
 
 
 def test_arun_basic():

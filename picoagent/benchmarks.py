@@ -7,8 +7,9 @@ A benchmark is a list of tasks; each task has a prompt, an expected substring
 """
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass, field
-from typing import Any, Callable
+from typing import Any
 
 from .agent import Agent, AgentConfig
 from .llm import BaseLLM, LLMResponse, MockLLM

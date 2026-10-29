@@ -21,7 +21,7 @@ class Message:
     content: str
     name: str | None = None          # tool name when role == TOOL
     tool_call_id: str | None = None
-    tool_calls: list["ToolCall"] | None = None
+    tool_calls: list[ToolCall] | None = None
     timestamp: float = field(default_factory=time.time)
 
     def to_dict(self) -> dict[str, Any]:

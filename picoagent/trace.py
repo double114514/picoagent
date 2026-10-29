@@ -43,7 +43,7 @@ class TraceRecorder:
     def close(self) -> None:
         self._fh.close()
 
-    def __enter__(self) -> "TraceRecorder":
+    def __enter__(self):
         return self
 
     def __exit__(self, *exc) -> None:

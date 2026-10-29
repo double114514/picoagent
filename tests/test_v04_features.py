@@ -1,11 +1,16 @@
 """Tests for multi-agent, Reflexion, and prompt templates."""
 import pytest
 
-from picoagent import (AgentConfig, FewShotPrompt, LLMResponse, MockLLM,
-                       PromptTemplate, ReflexionAgent, Team, ToolCall,
-                       ToolRegistry)
+from picoagent import (
+    FewShotPrompt,
+    LLMResponse,
+    MockLLM,
+    PromptTemplate,
+    ReflexionAgent,
+    Team,
+    ToolCall,
+)
 from picoagent.contrib.calculator import calculator_tools
-
 
 # ---------- multi-agent ----------
 

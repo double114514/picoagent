@@ -5,8 +5,15 @@ Run with real LLM:    OPENAI_API_KEY=... python examples/quickstart.py --live
 """
 import sys
 
-from picoagent import (Agent, AgentConfig, LLMResponse, MockLLM,
-                       OpenAICompatibleLLM, ToolCall, ToolRegistry)
+from picoagent import (
+    Agent,
+    AgentConfig,
+    LLMResponse,
+    MockLLM,
+    OpenAICompatibleLLM,
+    ToolCall,
+    ToolRegistry,
+)
 
 
 def build_tools() -> ToolRegistry:
@@ -18,7 +25,7 @@ def build_tools() -> ToolRegistry:
         allowed = set("0123456789+-*/(). ")
         if not set(expression) <= allowed:
             raise ValueError("unsafe expression")
-        return str(eval(expression))  # noqa: S307 - sandboxed demo only
+        return str(eval(expression))
 
     return reg
 

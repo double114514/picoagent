@@ -1,6 +1,5 @@
 """End-to-end agent loop tests using MockLLM."""
-from picoagent import (Agent, AgentConfig, LLMResponse, MockLLM,
-                       ToolCall, ToolRegistry)
+from picoagent import Agent, AgentConfig, LLMResponse, MockLLM, ToolCall, ToolRegistry
 
 
 def make_tools() -> ToolRegistry:

@@ -58,7 +58,7 @@ class FewShotPrompt:
         self.examples: list[Example] = []
 
     def add(self, input_text: str, output_text: str,
-            **extra: Any) -> "FewShotPrompt":
+            **extra: Any) -> FewShotPrompt:
         self.examples.append(Example(input=input_text, output=output_text,
                                      extra=extra))
         return self

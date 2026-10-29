@@ -10,7 +10,6 @@ from dataclasses import dataclass, field
 
 from .agent import Agent, AgentConfig
 from .llm import BaseLLM
-from .memory import Memory
 from .tools import ToolRegistry
 from .types import Message, Role
 

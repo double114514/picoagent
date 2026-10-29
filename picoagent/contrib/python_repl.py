@@ -20,7 +20,7 @@ def repl_tools(timeout: int = DEFAULT_TIMEOUT) -> ToolRegistry:
         try:
             proc = subprocess.run(
                 [sys.executable, "-I", "-c", code],
-                capture_output=True, text=True, timeout=timeout,
+                capture_output=True, text=True, timeout=timeout, check=False,
             )
         except subprocess.TimeoutExpired:
             raise ToolError(f"Execution timed out after {timeout}s")

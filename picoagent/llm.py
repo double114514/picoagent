@@ -10,7 +10,8 @@ import json
 import os
 import urllib.request
 from abc import ABC, abstractmethod
-from typing import Any, Callable, Iterator
+from collections.abc import Callable, Iterator
+from typing import Any
 
 from .types import Message, Role, ToolCall
 

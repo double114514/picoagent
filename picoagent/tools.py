@@ -2,7 +2,8 @@
 from __future__ import annotations
 
 import inspect
-from typing import Any, Callable, get_type_hints
+from collections.abc import Callable
+from typing import Any, get_type_hints
 
 _PY_TO_JSON = {str: "string", int: "integer", float: "number", bool: "boolean",
                list: "array", dict: "object"}
@@ -78,7 +79,7 @@ class ToolRegistry:
     def all(self) -> list[Tool]:
         return list(self._tools.values())
 
-    def merge(self, other: "ToolRegistry") -> "ToolRegistry":
+    def merge(self, other: ToolRegistry) -> ToolRegistry:
         """Copy all tools from another registry into this one."""
         self._tools.update(other._tools)
         return self

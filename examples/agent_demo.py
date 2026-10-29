@@ -5,8 +5,16 @@ Run with real LLM:    OPENAI_API_KEY=... python examples/agent_demo.py --live
 """
 import sys
 
-from picoagent import (Agent, AgentConfig, LLMResponse, MockLLM,
-                       OpenAICompatibleLLM, ToolCall, TraceRecorder, run_async)
+from picoagent import (
+    Agent,
+    AgentConfig,
+    LLMResponse,
+    MockLLM,
+    OpenAICompatibleLLM,
+    ToolCall,
+    TraceRecorder,
+    run_async,
+)
 from picoagent.contrib import default_tools
 
 

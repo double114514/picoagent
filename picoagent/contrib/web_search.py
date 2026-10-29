@@ -22,7 +22,7 @@ def search_tools(timeout: int = 15) -> ToolRegistry:
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 data = json.loads(resp.read().decode())
-        except Exception as exc:
+        except (OSError, ValueError, KeyError) as exc:
             raise ToolError(f"web_search failed: {exc}")
 
         lines: list[str] = []

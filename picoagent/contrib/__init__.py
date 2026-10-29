@@ -3,11 +3,11 @@
     from picoagent.contrib import default_tools
     agent = Agent(llm=..., tools=default_tools())
 """
+from ..tools import ToolRegistry
 from .calculator import calculator_tools
 from .file_io import file_tools
 from .python_repl import repl_tools
 from .web_search import search_tools
-from ..tools import ToolRegistry
 
 
 def default_tools(workspace: str | None = None) -> ToolRegistry:
@@ -20,5 +20,10 @@ def default_tools(workspace: str | None = None) -> ToolRegistry:
     return reg
 
 
-__all__ = ["calculator_tools", "file_tools", "repl_tools", "search_tools",
-           "default_tools"]
+__all__ = [
+    "calculator_tools",
+    "default_tools",
+    "file_tools",
+    "repl_tools",
+    "search_tools",
+]

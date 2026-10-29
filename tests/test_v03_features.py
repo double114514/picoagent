@@ -1,12 +1,20 @@
 """Tests for structured output, access control, persistent memory, benchmarks."""
 import pytest
 
-from picoagent import (AccessPolicy, Agent, AgentConfig, LLMResponse, MockLLM,
-                       SQLiteMemory, ToolError, ToolRegistry, guarded_registry,
-                       parse_structured, to_json_schema)
-from picoagent.benchmarks import offline_demo, summarize, BenchTask, run_benchmark
+from picoagent import (
+    AccessPolicy,
+    Agent,
+    AgentConfig,
+    LLMResponse,
+    MockLLM,
+    SQLiteMemory,
+    ToolError,
+    guarded_registry,
+    parse_structured,
+    to_json_schema,
+)
+from picoagent.benchmarks import offline_demo
 from picoagent.contrib.calculator import calculator_tools
-
 
 # ---------- structured output ----------
 
